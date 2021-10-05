@@ -1,0 +1,69 @@
+/* the variables are in another gist CSS-VARIABLES */
+.button {
+    background: var(--primary);
+    border: 1px solid var(--primary-dark);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button.outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.button.outline:hover , .button.selected {
+    background: var(--primary);
+}
+
+.button:hover {
+    background: var(--primary-dark);
+}
+
+.button.secondary {
+    background: var(--secondary);
+    border: 1px solid var(--secondary-dark);
+}
+
+.button.secondary:hover {
+    background: var(--secondary-dark);
+    font-size: larger;
+}
+
+
+.button.tertiary {
+    background: transparent;
+    border: 1px solid var(--tertiary-dark);
+}
+
+.button.tertiary:hover {
+    background: rgba(0, 0, 0, 0.288);
+}
+
+.button.quaternary {
+    background: var(--quaternary);
+    border: 1px solid var(--quaternary-dark);
+}
+.button.quaternary:hover {
+    background: var(--quaternary-dark);
+}
+
+.button.danger {
+    background: var(--danger);
+}
+
+.button.danger:hover {
+    background: var(--danger-dark);
+}
+
+.button.warning {
+    background: var(--warning);
+}
+

@@ -1,0 +1,93 @@
+.base {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto; 
+    z-index: 10;
+    right: 0;
+    width: 200px;
+    height: 100% ; 
+    background-color: rgba(47, 54, 60, 0.623); 
+    transition: all 0.2s ease-in-out ;
+    transform: translateX(155px);
+}
+
+.base:hover {
+    transform: translateX(0px);
+}
+
+.base .collapse{
+    width: 50px; 
+    transition: all 0.5s ease-in-out ;
+}
+
+.base ul {
+    padding: 0; 
+    margin: 0;
+}
+
+.friend {
+    position: relative;
+    display: flex; 
+    z-index: 10;
+    margin: 0; 
+    right: 0;
+    width: 200px;
+    height: 45px; 
+    background-color: rgba(47, 54, 60, 0.466); 
+    transition: all 0.5s ease-in-out ;
+}
+
+.friend:hover {
+    cursor: pointer;
+    background-color: rgba(47, 54, 60); 
+}
+
+.friend img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+.friend text {
+    color: rgb(252, 252, 169); 
+    font-size: 14px;
+}
+.friend text.online {
+    color: rgb(123, 196, 135); 
+    font-size: 10px;
+}
+
+.friend text.offline {
+    color: rgb(153, 153, 147); 
+    font-size: 10px;
+}
+
+
+.Section {
+    background-color: rgba(47, 54, 60); 
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Section text {
+    color: rgb(168,171,173); 
+    font-size: 12px;
+    margin: 0 1rem; 
+}
+.Section text + text {
+    color: rgb(170,174,176); 
+    font-size: 12px;
+}
+.tools {
+    margin-top: auto;
+    background-color: rgba(47, 54, 60); 
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
